@@ -1,0 +1,227 @@
+/* Dine styles indsættes her */
+
+/* desktop component styles (width 768px) */
+.cake-table {
+  background-color: #ecf0ec;
+}
+
+.cake-table--content-wrapper {
+  padding: 60px;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  min-width: 768px;
+  max-width: 768px;
+  height: 100%;
+}
+
+.cake-table--logo-banner {
+  height: 105px;
+}
+
+.cake-table--main-content {
+  width: 86%;
+}
+
+/* font family and color general styles */
+
+@font-face {
+  font-family: "volte";
+  src: url("./assets/Volte/Fontspring-DEMO-volte-regular.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "volte-bold";
+  src: url("./assets/Volte/Fontspring-DEMO-volte-bold.otf");
+  font-weight: bolder;
+}
+@font-face {
+  font-family: "volte-semibold";
+  src: url("./assets/Volte/Fontspring-DEMO-volte-semibold.otf");
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #3e4d3e;
+}
+
+/* headings */
+.cake-table--h1 {
+  font-size: 5rem;
+  font-family: "volte-semibold", sans-serif;
+}
+.cake-table--h2 {
+  font-size: 2.3rem;
+  font-weight: lighter;
+  line-height: 3.6rem;
+  font-family: "volte", sans-serif;
+}
+.cake-table--h3 {
+  font-size: 16px;
+  font-family: "volte-bold", sans-serif;
+  width: 40px;
+}
+.cake-table--h4 {
+  font-size: 2rem;
+  font-weight: lighter;
+  font-family: "volte", sans-serif;
+  text-align: left;
+  margin: 0;
+  width: 40px;
+}
+
+/* cake table article */
+.cake-table--article {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin: 0 0 2rem 0;
+}
+
+/* cake table ul and li */
+.cake-table--ul {
+  width: 100%;
+  height: fit-content;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0;
+  margin: 0;
+}
+
+.cake-table--li {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: center;
+  text-align: flex-start;
+  margin: 0;
+  padding: 0.5rem 0;
+  border-bottom: 0.1rem solid #3e4d3e;
+  height: 80px;
+  gap: 4.5rem;
+}
+
+.cake-table--li-left {
+  width: 15rem;
+}
+
+.cake-table--category-header {
+  border-bottom: 0.25rem solid #3e4d3e;
+  width: 100%;
+}
+
+.cake-table--category {
+  display: flex;
+  flex-flow: row nowrap;
+  text-transform: uppercase;
+  align-items: center;
+  gap: 0.25rem;
+  justify-content: left;
+  text-align: left;
+}
+
+/* utility classes */
+.show-on-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 414px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .cake-table--content-wrapper {
+    padding: 25px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  /* headings */
+  .cake-table--h1 {
+    font-size: 2.3rem;
+    width: 100vw;
+  }
+  .cake-table--h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: auto;
+  }
+  .cake-table--h3 {
+    font-size: 20px;
+    width: auto;
+    margin:  0 0 0.5rem 0;
+    padding: 0;
+    font-weight: regular;
+  }
+  .cake-table--h4 {
+    font-size: 20px;
+    width: auto;
+    margin: 0 0 0.5rem 0;
+  }
+
+  /* cake table article */
+  .cake-table--article {
+    width: 100%;
+  }
+
+  /* cake table ul and li */
+  .cake-table--ul {
+    width: 100vw;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cake-table--li {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items:flex-start;
+    margin: 1.5rem 0 0 0;
+    padding: 0;
+    border-bottom: 0.1rem solid #3e4d3e;
+    gap: 0;
+    width: 100vw;
+    height: fit-content;
+  }
+
+  .cake-table--li-left {
+    width: auto;
+  }
+
+  .cake-table--category-header {
+    border-bottom: 0.1rem solid #3e4d3e;
+    height: fit-content;
+  }
+  .cake-table--category-mobile {
+    font-weight: bolder;
+    text-transform: capitalize;
+  }
+  .cake-table--cake-wrapper {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5rem;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* utility classes */
+  .hide-on-mobile {
+    display: none;
+  }
+  .show-on-mobile {
+    display: flex;
+  }
+}
